@@ -1,0 +1,33 @@
+Angular is a JavaScript framework that allows developers to create dynamic and interactive web applications. 
+One of the features of Angular is its ability to make Asynchronous JavaScript and XML (Ajax) requests.
+
+Ajax is a technique used in web development to send and receive data asynchronously from a server without having to reload the entire web page. 
+This means that data can be updated on the page without the user having to refresh it, providing a more seamless and user-friendly experience.
+
+In Angular, Ajax requests are typically made using the built-in HttpClient service. 
+The HttpClient service provides methods for making various types of requests, such as GET, POST, PUT, DELETE, and more. 
+These requests can be made to REST APIs or other web services to retrieve or update data.
+
+To use the HttpClient service in an Angular application, 
+it must first be imported into the component or service that needs it. 
+For example:
+
+typescript
+
+import { HttpClient } from '@angular/common/http';
+
+@Injectable()
+export class DataService {
+  constructor(private http: HttpClient) { }
+}
+In this example, the HttpClient service is imported and injected into the DataService class.
+The HttpClient service is then used to make requests to a web service by calling its methods, such as get():
+
+this.http.get('/api/data').subscribe(data => {
+  // Handle the response data here
+});
+In this example, the get() method is used to make a GET request to the /api/data endpoint, 
+and the response data is handled in the callback function passed to the subscribe() method.
+
+Overall, Ajax requests in Angular can be made using the HttpClient service, 
+and provide a powerful way to create dynamic and interactive web applications.
