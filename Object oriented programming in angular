@@ -1,0 +1,26 @@
+Angular is a popular front-end web framework that uses object-oriented programming (OOP) principles to create complex applications. 
+OOP is a programming paradigm that is based on the concept of objects, 
+which have attributes (properties) and methods (functions) that can be used to manipulate the object.
+
+In Angular, objects are created using classes, which define the structure and behavior of the object. 
+Classes in Angular can be used to create components, services, directives, and pipes, which are the building blocks of an Angular application.
+
+Here are some key OOP concepts in Angular:
+
+Classes: Classes are used to define the structure and behavior of objects. 
+In Angular, classes are used to define components, services, directives, and pipes.
+
+Inheritance: Inheritance is a mechanism that allows a class to inherit properties and methods from a parent class. 
+In Angular, components can inherit properties and methods from a parent component using the @Input decorator.
+
+Polymorphism: Polymorphism is the ability of an object to take on multiple forms. 
+In Angular, components can be polymorphic by using the @ViewChild decorator to get a reference to a child component.
+
+Encapsulation: Encapsulation is the concept of hiding the implementation details of an object from the outside world. 
+In Angular, encapsulation can be achieved by using private and protected access modifiers in class properties and methods.
+
+Abstraction: Abstraction is the process of hiding unnecessary details while highlighting the essential features of an object. 
+In Angular, abstraction can be achieved by creating abstract classes or interfaces that define the essential features of a component or service.
+
+Overall, OOP is an essential part of creating complex and scalable Angular applications. 
+By using classes, inheritance, polymorphism, encapsulation, and abstraction, developers can create reusable and maintainable code that is easier to understand and modify.
