@@ -1,0 +1,25 @@
+Components: Components are the building blocks of an Angular application. 
+They are responsible for rendering the UI and handling user interactions. 
+Understanding how to create, use and communicate between components is a fundamental concept in Angular.
+
+Modules: Modules are used to organize and manage the different parts of an Angular application. 
+They help to keep the code organized and make it easier to maintain and scale. 
+Understanding how to create, import and export modules is an essential concept in Angular.
+
+Services: Services are used to share data and functionality between different parts of an Angular application. 
+They are a way to centralize common functionality and make it available throughout the application. 
+Understanding how to create and use services is crucial in Angular.
+
+Directives: Directives are used to manipulate the DOM and provide additional functionality to HTML elements. 
+Understanding how to create, use and communicate with directives is an important concept in Angular.
+
+Dependency Injection: Dependency Injection is a design pattern used in Angular to make components more modular and reusable. 
+It allows components to depend on services without having to create them themselves. 
+Understanding how to use dependency injection is a key concept in Angular.
+
+Routing: Routing is used to navigate between different pages or views in an Angular application. 
+It allows for the creation of Single Page Applications (SPAs) that provide a better user experience. 
+Understanding how to configure and use routing in Angular is an essential concept.
+
+These are just a few of the most important concepts in Angular, and there are many more. 
+I hope this provides you with a helpful starting point for your Angular learning journey!
