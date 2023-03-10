@@ -1,0 +1,67 @@
+In Angular, services are used to provide functionality that can be shared across components, modules, or other services. 
+Services are essentially classes that are designed to be reusable and can be injected into other components or services to provide functionality or data.
+
+Services can be used to perform a variety of tasks such as fetching data from an API, handling user authentication, or performing calculations. 
+They can also be used to manage state across multiple components or to encapsulate business logic.
+
+To use a service in Angular, you first need to create a service class using the @Injectable() decorator. 
+This decorator tells Angular that the class can be injected into other components or services.
+
+Here is an example of a basic service class in Angular:
+
+typescript
+
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class MyService {
+  constructor() { }
+
+  myMethod() {
+    // code to perform some functionality
+  }
+}
+Once you have created your service, you can inject it into a component or another service using Angular's dependency injection system. 
+To inject a service into a component, you need to include it as a constructor parameter like this:
+
+typescript
+
+import { Component } from '@angular/core';
+import { MyService } from './my-service';
+
+@Component({
+  selector: 'app-my-component',
+  templateUrl: './my-component.html'
+})
+export class MyComponent {
+  constructor(private myService: MyService) { }
+
+  someMethod() {
+    // use the service to perform some functionality
+    this.myService.myMethod();
+  }
+}
+In this example, the MyComponent class has a constructor parameter called myService of type MyService. 
+This tells Angular to inject an instance of the MyService class into the MyComponent instance.
+
+Finally, to make your service available to your entire application, you can add it to the providers array in the 
+app.module.ts file like this:
+
+python
+
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { MyService } from './my-service';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule],
+  providers: [MyService],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+By adding your service to the providers array, you are telling Angular to create 
+a single instance of the service and make it available throughout your application.
