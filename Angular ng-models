@@ -1,0 +1,17 @@
+AngularJS is an older version of the Angular framework, 
+and ng-model is a directive in AngularJS used to bind input controls like input, select, 
+and textarea to a variable or property defined in the scope of a controller.
+
+The ng-model directive is used to create a two-way data binding between the view and the model. 
+When the value of the input control changes, the model is updated, and when the value of the model changes, the input control is updated.
+
+Here's an example of how to use ng-model in AngularJS:
+
+python
+Copy code
+<input type="text" ng-model="name">
+In this example, the ng-model directive is used to bind the value of the input element to the name variable in the controller's scope. 
+Whenever the user types something into the input field, the name variable is updated automatically.
+
+It's important to note that in newer versions of Angular (i.e., Angular 2 and above), 
+ng-model has been replaced with a more robust and flexible system of reactive forms and form controls.
