@@ -1,0 +1,18 @@
+Angular is an open-source web application framework developed by Google. 
+It is used to build dynamic and responsive web applications, which can be run on desktop, mobile, and tablet devices. 
+Angular is based on TypeScript, a superset of JavaScript, and provides a range of features and tools to help developers create high-quality applications.
+
+Some of the key features of Angular include:
+
+Component-based architecture: Angular applications are built using components, 
+which are reusable building blocks that contain both the UI and the business logic of an application.
+
+Two-way data binding: Angular provides two-way data binding, which allows changes in the model to be reflected in the view and vice versa.
+
+Dependency injection: Angular's dependency injection system makes it easy to manage dependencies between components and services.
+
+RxJS: Angular includes RxJS, a library for reactive programming that allows developers to manage complex asynchronous operations.
+
+Angular CLI: Angular comes with a command-line interface (CLI) tool that makes it easy to create, build, and test Angular applications.
+
+Overall, Angular is a powerful and flexible framework that is well-suited for building large-scale, complex web applications.
